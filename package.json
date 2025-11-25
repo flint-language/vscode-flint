@@ -41,6 +41,12 @@
         "scopeName": "source.flint",
         "path": "./syntaxes/flint.tmLanguage.json"
       }
+    ],
+    "snippets": [
+      {
+        "language": "flint",
+        "path": "./snippets.json"
+      }
     ]
   },
   "configuration": {

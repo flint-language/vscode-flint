@@ -1,0 +1,72 @@
+{
+    "Public Function": {
+        "prefix": [
+            "pub",
+            "pub fn"
+        ],
+        "body": [
+            "pub fn ${1:function_name}(${2}) ${3:Nil} {",
+            "\t${0}",
+            "}"
+        ],
+        "description": "public function"
+    },
+    "Private Function": {
+        "prefix": [
+            "fn"
+        ],
+        "body": [
+            "fn ${1:function_name}(${2}) ${3:Nil} {",
+            "\t${0}",
+            "}"
+        ],
+        "description": "private function"
+    },
+    "Test Function": {
+        "prefix": [
+            "test"
+        ],
+        "body": [
+            "pub fn ${1:name}_test() {",
+            "\t${0}",
+            "}"
+        ],
+        "description": "test function"
+    },
+    "Use": {
+        "prefix": [
+            "use"
+        ],
+        "body": [
+            "use ${0:flint/result}"
+        ],
+        "description": "use"
+    },
+    "Use Unqualified": {
+        "prefix": [
+            "use"
+        ],
+        "body": [
+            "use ${1:flint/result}.{${0}}"
+        ],
+        "description": "use unqualified"
+    },
+    "Val assignment": {
+        "prefix": [
+            "val"
+        ],
+        "body": [
+            "val ${1}${2::} = ${0}"
+        ],
+        "description": "val assignment"
+    },
+    "Mut assignment": {
+        "prefix": [
+            "mut"
+        ],
+        "body": [
+            "mut ${1}${2::} = ${0}"
+        ],
+        "description": "mut assignment"
+    }
+}

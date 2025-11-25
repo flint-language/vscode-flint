@@ -10,14 +10,69 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#constant"
+		},
+		{
+			"include": "#primitives"
+		},
+		{
+			"include": "#variables"
 		}
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.flint",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.flint",
+					"match": "\\b(as|assert|else|fn|for|if|in|match|mut|panic|pub|type|use|val|where)\\b"
+				},
+				{
+					"name": "keyword.operator.arrow.flint",
+					"match": "\\->"
+				},
+				{
+					"name": "keyword.operator.pipe.flint",
+					"match": "\\|>"
+				},
+				{
+					"name": "keyword.operator.comparison.flint",
+					"match": "(==|!=)"
+				},
+				{
+					"name": "keyword.operator.comparison.float.flint",
+					"match": "(<=\\.|>=\\.|<\\.|>\\.)"
+				},
+				{
+					"name": "keyword.operator.comparison.int.flint",
+					"match": "(<=|>=|<|>)"
+				},
+				{
+					"name": "keyword.operator.logical.flint",
+					"match": "(&&|\\|\\|)"
+				},
+				{
+					"name": "keyword.operator.string.flint",
+					"match": "<>"
+				},
+				{
+					"name": "keyword.operator.other.flint",
+					"match": "\\|"
+				},
+				{
+					"name": "keyword.operator.arithmetic.float.flint",
+					"match": "(\\+\\.|\\-\\.|/\\.|\\*\\.)"
+				},
+				{
+					"name": "keyword.operator.arithmetic.int.flint",
+					"match": "(\\+|\\-|/|\\*|%)"
+				},
+				{
+					"name": "keyword.operator.assignment.flint",
+					"match": "="
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.flint",
@@ -37,7 +92,38 @@
 					"match": "\/\/.*"
 				}
 			]
+		},
+		"constant": {
+			"patterns": [
+				{
+					"include": "#decimal_number"
+				},
+				{
+					"name": "constant.language.flint",
+					"match": "\\b(False|True)\\b"
+				}
+			]
+		},
+		"decimal_number": {
+			"name": "constant.numeric.decimal.flint",
+			"match": "\\b([0-9][0-9_]*)(\\.([0-9_]*)?(e-?[0-9]+)?)?\\b",
+			"patterns": []
+		},
+		"primitives": {
+			"name": "storage.type.primitive.flint",
+			"match": "\\b(Bool|Byte|Float|Int|List|Nil|String)\\b"
+		},
+		"variables": {
+			"patterns": [
+				{
+					"name": "support.variable",
+					"match": "[A-Za-z]+[A-Za-z0-9_$]*'*"
+				}
+			]
 		}
 	},
-	"scopeName": "source.flint"
+	"scopeName": "source.flint",
+	"fileTypes": [
+		"flint"
+	]
 }

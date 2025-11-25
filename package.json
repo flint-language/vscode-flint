@@ -16,6 +16,7 @@
     "Formatters",
     "Snippets"
   ],
+  "icon": "images/icon.png",
   "contributes": {
     "languages": [
       {

@@ -1,0 +1,45 @@
+{
+  "name": "flint",
+  "displayName": "Flint",
+  "description": "Support for the Flint programming language",
+  "version": "0.0.1",
+  "publisher": "flint",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flint-language/vscode-flint"
+  },
+  "engines": {
+    "vscode": "^1.52.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Formatters",
+    "Snippets"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "flint",
+        "aliases": [
+          "Flint",
+          "flint"
+        ],
+        "extensions": [
+          ".flint"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./images/amber-logo.png",
+          "dark": "./images/amber-logo.png"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "flint",
+        "scopeName": "source.flint",
+        "path": "./syntaxes/flint.tmLanguage.json"
+      }
+    ]
+  }
+}

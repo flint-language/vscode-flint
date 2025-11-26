@@ -3,7 +3,7 @@
   "displayName": "Flint",
   "description": "Support for the Flint programming language",
   "version": "0.1.0",
-  "publisher": "flint",
+  "publisher": "Flint-lang",
   "repository": {
     "type": "git",
     "url": "https://github.com/flint-language/vscode-flint"

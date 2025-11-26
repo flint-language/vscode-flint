@@ -11,8 +11,6 @@ import {
 let client: LanguageClient | undefined;
 
 export async function activate(context: vscode.ExtensionContext) {
-    console.log("🔥 Flint extension activated");
-    vscode.window.showInformationMessage("Flint extension activated");
     const flintPath = await getFlintCommandPath();
     if (!flintPath) {
         vscode.window.showErrorMessage(

@@ -2,7 +2,7 @@
   "name": "flint",
   "displayName": "Flint",
   "description": "Support for the Flint programming language",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "flint",
   "repository": {
     "type": "git",
@@ -61,9 +61,11 @@
     }
   },
   "scripts": {
+    "vscode:prepublish": "webpack --mode production",
     "compile": "webpack --mode development",
     "compile-watch": "webpack --mode development --watch",
-    "vscode:prepublish": "webpack --mode production"
+    "test-compile": "tsc -p ./",
+    "vscode:package": "vsce package"
   },
   "activationEvents": [],
   "main": "./out/extension.js",

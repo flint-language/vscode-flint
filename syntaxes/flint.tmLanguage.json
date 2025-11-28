@@ -26,7 +26,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.flint",
-					"match": "\\b(as|assert|else|fn|for|if|in|match|mut|panic|pub|type|use|val|where)\\b"
+					"match": "\\b(as|assert|else|fn|if|match|mut|panic|pub|type|use|val)\\b"
 				},
 				{
 					"name": "keyword.operator.arrow.flint",

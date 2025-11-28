@@ -2,7 +2,7 @@
   "name": "flint",
   "displayName": "Flint",
   "description": "Support for the Flint programming language",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "Flint-lang",
   "repository": {
     "type": "git",

@@ -7,3 +7,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## v0.1.2
 
 - Removed for from highlighting.
+
+## v0.1.3
+
+- Included new keywords (Then, Unsigned)
+- Removed Assert and Panic from highlighting

@@ -26,7 +26,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.flint",
-					"match": "\\b(as|assert|else|fn|if|match|mut|panic|pub|type|use|val)\\b"
+					"match": "\\b(as|else|fn|if|match|mut|pub|then|type|use|val)\\b"
 				},
 				{
 					"name": "keyword.operator.arrow.flint",
@@ -111,7 +111,7 @@
 		},
 		"primitives": {
 			"name": "storage.type.primitive.flint",
-			"match": "\\b(Bool|Byte|Float|Int|List|Nil|String)\\b"
+			"match": "\\b(Bool|Byte|Float|Int|List|Nil|String|Unsigned)\\b"
 		},
 		"variables": {
 			"patterns": [

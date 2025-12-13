@@ -1,14 +1,23 @@
-# Change Log
+# Changelog
 
-All notable changes to the "flint" extension will be documented in this file.
+All notable changes to the **Flint** VS Code extension are documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+This project follows the principles of
+[Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
-## v0.1.2
+---
 
-- Removed for from highlighting.
+## [0.1.4] – Added
+- Added support for multi-line (`/* ... */`) comment highlighting
+- Added new keyword: `fun`
 
-## v0.1.3
+---
 
-- Included new keywords (Then, Unsigned)
-- Removed Assert and Panic from highlighting
+## [0.1.3] – Changed
+- Added new keywords: `then`, `Unsigned`
+- Removed deprecated keywords: `assert`, `panic`
+
+---
+
+## [0.1.2] – Fixed
+- Removed incorrect highlighting for the `for` keyword

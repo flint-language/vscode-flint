@@ -26,7 +26,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.flint",
-					"match": "\\b(as|else|fn|if|match|mut|pub|then|type|use|val)\\b"
+					"match": "\\b(as|else|fn|fun|if|match|mut|pub|then|type|use|val)\\b"
 				},
 				{
 					"name": "keyword.operator.arrow.flint",
@@ -90,6 +90,11 @@
 				{
 					"name": "comment.line.flint",
 					"match": "\/\/.*"
+				},
+				{
+					"name": "comment.block.flint",
+					"begin": "/\\*",
+					"end": "\\*/"
 				}
 			]
 		},

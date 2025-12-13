@@ -2,7 +2,7 @@
   "name": "flint",
   "displayName": "Flint",
   "description": "Support for the Flint programming language",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "publisher": "Flint-lang",
   "repository": {
     "type": "git",
@@ -47,16 +47,17 @@
         "language": "flint",
         "path": "./snippets.json"
       }
-    ]
-  },
-  "configuration": {
-    "title": "Flint",
-    "properties": {
-      "flint.path": {
-        "type": "string",
-        "default": null,
-        "description": "A path to the flint executable. By default, the extension looks for gleam in the PATH, but if set, will use the path specified instead.",
-        "scope": "machine"
+    ],
+    "configuration": {
+      "title": "Flint",
+      "properties": {
+        "flint.path": {
+          "type": "string",
+          "_comment": "Change the default PATH from null to flint's install path",
+          "default": null,
+          "description": "A path to the flint executable. By default, the extension looks for flint in the PATH, but if set, will use the path specified instead.",
+          "scope": "machine"
+        }
       }
     }
   },

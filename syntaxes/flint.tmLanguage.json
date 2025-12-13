@@ -116,7 +116,7 @@
 		},
 		"primitives": {
 			"name": "storage.type.primitive.flint",
-			"match": "\\b(Bool|Byte|Float|Int|List|Nil|String|Unsigned)\\b"
+			"match": "\\b(Bool|Byte|Float|F32|F64|Int|I8|I16|I32|I64|List|Nil|String|Unsigned|U8|U16|U32|U64)\\b"
 		},
 		"variables": {
 			"patterns": [

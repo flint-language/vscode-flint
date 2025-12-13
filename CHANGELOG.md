@@ -7,17 +7,20 @@ This project follows the principles of
 
 ---
 
-## [0.1.4] – Added
+## [0.1.5] - Added
+- Added new datatype keywords: `U/F/I-> 64` 
+
+## [0.1.4] - Added
 - Added support for multi-line (`/* ... */`) comment highlighting
 - Added new keyword: `fun`
 
 ---
 
-## [0.1.3] – Changed
+## [0.1.3] - Changed
 - Added new keywords: `then`, `Unsigned`
 - Removed deprecated keywords: `assert`, `panic`
 
 ---
 
-## [0.1.2] – Fixed
+## [0.1.2] - Fixed
 - Removed incorrect highlighting for the `for` keyword
